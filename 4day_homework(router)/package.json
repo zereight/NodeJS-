@@ -1,0 +1,18 @@
+{
+    "name": "homework4",
+    "version": "1.0.0",
+    "description": "home work 4th day",
+    "main": "src/index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node src/index.js"
+    },
+    "author": "aldwk68@naver.com",
+    "license": "ISC",
+    "dependencies": {
+        "@babel/core": "^7.6.0",
+        "@babel/node": "^7.6.1",
+        "@babel/preset-env": "^7.6.0",
+        "express": "^4.17.1",
+        "nodemon": "^1.19.2"
+    }
+}
