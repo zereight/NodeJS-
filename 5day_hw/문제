@@ -1,0 +1,26 @@
+/*
+
+지난 과제 정답 https://codesandbox.io/s/day-five-solution-rkcyp
+Today's challenge is based on videos #2.12 to #2.17
+오늘 시청하는 강의: #2.12 to #2.17
+오늘 제출하는 과제: 위의 강의를 시청하신 후, 아래 코딩챌린지를 완료하세요.
+
+조건:
+
+Make FOUR (4) routes. / /login /photos /profile
+Each route should render a PUG template.
+NO Anonymous functions allowed. Every route should have a controller.
+Put the templates on the 'views' folder.
+All templates should extend from a layout.
+The layout should contain the <head> portion of the page and a <footer> partial.
+On the <body> each page has to have a <h1> with the title of the page.
+On the <head> each page has to have a <title> with the title of the page and the title of the website.
+The title of the page and the website should not be written on the template.
+The title of the page should come from the controller.
+The title of the website should not come from the controller, it should come from the locals.
+There should be one router file and one controller file.
+Middlewares should have their own file.
+
+
+pug는 템플릿 언어로서, express 의 view engine이다.
+*/
