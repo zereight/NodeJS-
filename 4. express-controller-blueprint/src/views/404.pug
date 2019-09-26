@@ -1,0 +1,21 @@
+extends layouts/main
+
+block content
+    if (searchByYear)
+        h1 Searching By Year: #{searchByYear}
+    else if(searchByRating)
+        h1 Searching By Rating: #{searchByRating}
+    else
+        h1 404 Not Found!!
+    
+    if (movieInfos.length > 0)
+        each movie in movieInfos
+            a(href=`/${movie.id}`) #{movie.title}
+            p
+    else
+        h1 404 Not Found!!
+        
+        //- #{console.log(movieInfo)}
+        
+        
+            

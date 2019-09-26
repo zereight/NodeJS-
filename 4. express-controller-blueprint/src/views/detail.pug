@@ -1,0 +1,15 @@
+
+extends layouts/main
+
+block content      
+    if (~movieInfo)
+        h1 #{movieInfo.title}
+        p #{movieInfo.description_full}
+        ul
+        each genre in movieInfo.genres
+            li #{genre}
+            
+        //- #{console.log(movieInfo)}
+        
+        
+            
