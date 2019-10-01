@@ -1,0 +1,8 @@
+extends templates/layout
+
+block content
+    form(action=`/add/upload`, method="post")
+        input(type="text", placeholder="Title", required=true, name="title")
+        textarea(name="synopsis", cols="30", rows="5", placeholder="Synopsis")
+        input(type="text", placeholder="Genres", required=true, name="genres")
+        input(type="submit", value="Add Movie")
