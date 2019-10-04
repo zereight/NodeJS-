@@ -1,0 +1,11 @@
+extends layouts/main
+
+block content
+    if searchingBy === "Rating"
+        h1 Searching By #{searchingBy}
+    else if searchingBy === "Year"
+        h1 Searching By #{searchingBy}
+
+    each movie in movies
+        p
+            a(href=`/${movie.id}`) #{movie.title}

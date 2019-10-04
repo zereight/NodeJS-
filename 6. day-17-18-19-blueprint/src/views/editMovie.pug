@@ -1,0 +1,12 @@
+extends layouts/main
+
+block content
+    //- #{console.log(movie)}
+    form( action=`/${movie.id}/edit`, method='post' )
+        input(type='text', placeholder='Title', name='title', required=true, value= movie.title )
+        input(type='number', min="1900", max="2019" , placeholder='Year', name='year', required=true, value=movie.year )
+        input(type='text', placeholder='Rating', name='rating', required=true, value=movie.rating )
+        textarea(name="synopsis", cols="30", rows="5", required=true, placeholder='Synopsis') #{movie.synopsis}
+        input(type='text', placeholder='Genres', name='genres', required=true, value= String(movie.genres) )
+        input(type='submit', value="Submit")
+    a(href=`/${movie.id}/delete`) Delete Movie

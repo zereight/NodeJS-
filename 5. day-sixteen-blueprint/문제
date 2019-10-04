@@ -10,3 +10,5 @@ Use .pug
 You need to take the genres input from the frontend and learn how to turn it into an array on the backend. Separate it by commas ( **,** )  ``Drama, Comedy, Accion -> ["Drama", "Comedy", "Action"]``
 Not allowed to type the array from the frontend.
 The app must behave exactly like the video
+
+답: https://codesandbox.io/s/day-sixteen-solution-zrrru

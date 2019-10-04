@@ -1,0 +1,8 @@
+extends layouts/main
+
+block content
+    h1 Home
+    if movies.length !== 0
+        each movie in movies
+            p
+            a(href=`/${movie.id}`) #{movie.title}
