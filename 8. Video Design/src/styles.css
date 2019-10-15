@@ -1,0 +1,109 @@
+body {
+  font-family: sans-serif;
+}
+
+.videoPlayer{
+  position: relative;
+}
+
+.videoPlayer .videoPlayer__controls:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+
+.videoPlayer .videoPlayer__controls{
+  opacity: 0;
+  transition: opacity 0.4s linear;
+  color: white;
+  position: absolute;
+  z-index: 9;
+  bottom: 5px;
+  width: 680px;
+  background-color: rgba(0,0,0,0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  display: flex;
+  justify-content: flex-start;
+  grid-template-columns: repeat(3, 1fr);
+  font-size: 16px;
+}
+
+.videoPlayer__controls, .videoPlayer__columns{
+  margin:0;
+  padding:0;
+}
+
+.videoPlayer__controls .videoPlayer__column:first-child{
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.videoPlayer__controls .videoPlayer__column:nth-child(2){
+  width: 70%;
+  margin-top: 18px;
+  margin-left:50px;
+}
+.videoPlayer__controls .videoPlayer__column:nth-child(3){
+  width: 70%;
+  padding:0 ;
+  margin: 0;
+  font-size: 15px;
+  margin-top: 18px;
+  margin-left:50px;
+}
+.videoPlayer__controls .videoPlayer__column:nth-child(4){
+  margin-top: 18px;
+  margin-right: 10px;
+
+}
+.videoPlayer__controls .videoPlayer__column:nth-child(5){
+  margin-top: 18px;
+  margin-right: 10px;
+}
+.videoPlayer__controls .videoPlayer__column:first-child #jsVolumeBtn{
+  margin-right: 0px;
+}
+
+.videoPlayer__controls .videoPlayer__volume {
+  position: relative;
+  padding: 0;
+  opacity: 1;
+  top: -80px;
+  left: -30px;
+  transform: rotate(-90deg);
+  z-index: 10;
+  width: 80px;
+}
+
+.videoPlayer__volume input {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.videoPlayer__volume input::-webkit-slider-runnable-track {
+  background-color: gray;
+  height: 5px;
+}
+
+.videoPlayer__volume input::-webkit-slider-thumb {
+  all: unset;
+  background-color: red;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  position: relative;
+  top: -5px;
+}
+
+.videoPlayer__column:last-child{
+  justify-self: end;
+}
+.videoPlayer__column:nth-child(2){
+  justify-self: center;
+}
+
+.videoPlayer__column:first-child,
+.videoPlayer__column:last-child,
+.videoPlayer__column:nth-child(4) {
+  cursor: pointer;
+}
+
