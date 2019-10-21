@@ -1,0 +1,17 @@
+지난 과제 정답: https://codesandbox.io/s/geo-solution-g643x
+
+이번과제 정답: https://codesandbox.io/s/coin-tracker-solution-dh9zt
+
+아래 API 를 불러와서 '리얼타임' 암호화폐 가격을 추적하는 대시보드를 만드세요. 
+Challenge goals:
+
+Using the awesome Coinpaprika API build a "real-time" crypto price tracker dashboard!
+There is one URL https://api.coinpaprika.com/v1/tickers that gives you all the coins with their price in USD
+Call the URL when the page loads
+Show me a loading indicator when the request is happening
+When the data comes, paint all the coins with their prices.
+Every 5 seconds call the URL again and repaint the results
+IF ANY OF THE REQUIREMENTS ARE NOT FULFILLED YOU WILL GET AN ❌
+
+Because the API is now on ``https`` you can work on Codesandbox for this one.
+
